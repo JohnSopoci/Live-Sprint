@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head> </head>
+  <body>
+    <link rel="stylesheet" href="sprint.css" />
+    <script src="sprint.js" defer></script>
+    <header>
+      <section id="header" class="header-section">
+        <center>
+          <div class="header-content">
+            Welcome to the Interactive Reveal What’s that Animal UI
+          </div>
+        </center>
+      </section>
+    </header>
+    <main>
+      <section class="content-section">
+        <center>
+          <p>Click on the buttons below to reveal the animal images</p>
+        </center>
+      </section>
+      <section id="pricing" class="section-container">
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3 class="tier-name">Reveal a Cat</h3>
+            <button>
+              Reveal
+              <script
+                class="reveal-button"
+                onclick="revealImage('cat')"
+              ></script>
+            </button>
+          </article>
+          <article class="pricing-card featured">
+            <h3 class="popular-tag">Reveal a Dog</h3>
+            <button>
+              Reveal
+              <script
+                class="reveal-button"
+                onclick="revealImage('dog')"
+              ></script>
+            </button>
+          </article>
+          <article class="pricing-card Enterprise">
+            <button>
+              Reveal
+              <script
+                class="reveal-button"
+                onclick="revealImage('cow')"
+              ></script>
+            </button>
+            <h3 class="tier-name">Reveal a cow</h3>
+          </article>
+        </div>
+      </section>
+      <section class="content-section">
+        <div id="image-container" class="image-container">
+          <img src="tabby-cat.jpg" alt="Example Image" class="spaced-image" />
+          <img src="dog.jpg" alt="Example Image" class="spaced-image" />
+          <img src="cow.jpg" alt="Example Image" class="spaced-image" />
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Devpulse. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

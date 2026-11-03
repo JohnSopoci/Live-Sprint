@@ -1,0 +1,165 @@
+:root {
+  --bg-dark: #090d16;
+  --bg-card: #111827;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --text-main: #cfe7ff;
+  --text-muted: #f3f4f8;
+  --border-color: #374151;
+  --accent: #10b981;
+  --font-family: --transition-speed: 0.2s;
+}
+header {
+  visibility: visible;
+  background-color: var(--bg-dark);
+  padding: 1rem;
+  text-align: center;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+.features-grid {
+  /* you canlayout using display:flex: self practice */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.pricing-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+  transition:
+    transform var(--transition-speed),
+    border-color var(--transition-speed);
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  /* you can add more things here. */
+}
+
+.feature-icon {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* pricing matrix */
+
+.pricing-grid {
+  visibility: visible;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.pricing-card {
+  visibility: visible;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-speed);
+}
+
+.pricing-card.Enterprise {
+  border: 2px solid var(--primary);
+  background-color: rgba(99, 102, 241, 0.04);
+  transform: scale(1.03);
+}
+
+/*.pricing-card.Enterprise {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}*/
+
+.tier-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.tier-desc {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.tier-price {
+  margin-bottom: 1.5rem;
+}
+
+.price-val {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.price-unit {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.tier-features {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  flex-grow: 1; /**pushes the button the bottom evenly*/
+}
+
+.tier-features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--accent);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+div {
+  background-image: url("tabby-cat.jpg");
+  visibility: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+div {
+  background-image: url("dog.jpg");
+  visibility: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+div {
+  background-image: url("cow.jpg");
+  visibility: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
